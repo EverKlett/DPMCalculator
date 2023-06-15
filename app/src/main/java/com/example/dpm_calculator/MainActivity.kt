@@ -32,9 +32,16 @@ class MainActivity : ComponentActivity() {
 
     fun allClearAction(view: View) {
         val binding = ActivityMainBinding.inflate(layoutInflater);
+        binding.workingsTV.text = ""
+        binding.resultsTV.text = ""
     }
     fun equalsAction(view: View) {}
-    fun backSpaceAction(view: View) {}
+    fun backSpaceAction(view: View) {
+        val binding = ActivityMainBinding.inflate(layoutInflater)
+        val length = binding.workingsTV.length()
+        if (length > 0)
+            binding.workingsTV.text.subSequence(0, length - 1)
+    }
 }
 
 @Composable
