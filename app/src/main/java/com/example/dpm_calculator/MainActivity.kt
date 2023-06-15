@@ -1,6 +1,8 @@
 package com.example.dpm_calculator
 
 import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -10,6 +12,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.dpm_calculator.databinding.ActivityMainBinding
 import com.example.dpm_calculator.ui.theme.DPMCalculatorTheme
 
 class MainActivity : ComponentActivity() {
@@ -24,6 +27,16 @@ class MainActivity : ComponentActivity() {
             }
         }
     }
+
+    fun numberAction(view: View) {}
+    fun operationAction(view: View) {}
+
+    fun allClearAction(view: View) {
+        val binding = ActivityMainBinding.inflate(layoutInflater)
+        binding.workingsTV
+    }
+    fun equalsAction(view: View) {}
+    fun backSpaceAction(view: View) {}
 }
 
 @Composable
