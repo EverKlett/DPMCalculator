@@ -1,7 +1,6 @@
 package com.example.dpm_calculator
 
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -32,8 +31,7 @@ class MainActivity : ComponentActivity() {
     fun operationAction(view: View) {}
 
     fun allClearAction(view: View) {
-        val binding = ActivityMainBinding.inflate(layoutInflater)
-        binding.workingsTV
+        val binding = ActivityMainBinding.inflate(layoutInflater);
     }
     fun equalsAction(view: View) {}
     fun backSpaceAction(view: View) {}
