@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "DPM-Calculator"
-include ':app'
+include ":app"
